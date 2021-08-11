@@ -2,6 +2,7 @@ import React from 'react';
 import { Stack, Text, Link, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
 import logo from './logo.svg';
 import './App.css';
+import { View } from "./View";
 
 const boldStyle: Partial<ITextStyles> = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
@@ -39,6 +40,7 @@ export const App: React.FunctionComponent = () => {
         <Link href="https://developer.microsoft.com/en-us/fluentui#/styles/web">Styles</Link>
         <Link href="https://aka.ms/themedesigner">Theme designer</Link>
       </Stack>
+        <View />
     </Stack>
   );
 };
